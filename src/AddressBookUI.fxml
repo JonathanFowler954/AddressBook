@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="361.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddressBookUIController">
+   <children>
+      <MenuButton fx:id="fileButton" layoutX="1.0" mnemonicParsing="false" text="File">
+        <items>
+          <MenuItem fx:id="openFileButton" mnemonicParsing="false" onAction="#OpenAddressBook_Select" text="Open Address Book FIle" />
+            <MenuItem fx:id="PrintContactsTermButton" mnemonicParsing="false" onAction="#PrintContactList_Select" text="PrintContacts to Terminal" />
+          <MenuItem fx:id="saveButtonFile" mnemonicParsing="false" onAction="#SaveAddressBooktoFile_Select" text="Save Addess Book To File" />
+            <MenuItem fx:id="exitButton" mnemonicParsing="false" text="Exit" />
+        </items>
+      </MenuButton>
+      <TextField fx:id="searchTextField" layoutX="148.0" promptText="Enter Contact Name" />
+      <Button fx:id="SearchButton" layoutX="297.0" mnemonicParsing="false" onAction="#SearchForContact" text="Search" />
+      <Label layoutX="13.0" layoutY="82.0" text="Name:" />
+      <TextField fx:id="nameTextField" layoutX="88.0" layoutY="77.0" prefHeight="25.0" prefWidth="220.0" />
+      <Label layoutX="13.0" layoutY="121.0" text="Age:" />
+      <TextField fx:id="ageTextField" layoutX="88.0" layoutY="115.0" prefHeight="25.0" prefWidth="220.0" />
+      <Label layoutX="13.0" layoutY="162.0" text="Address:" />
+      <TextField fx:id="addressTextField" layoutX="88.0" layoutY="158.0" prefHeight="25.0" prefWidth="220.0" />
+      <Label layoutX="13.0" layoutY="200.0" text="Email:" />
+      <TextField fx:id="emailTextField" layoutX="88.0" layoutY="195.0" prefHeight="25.0" prefWidth="220.0" />
+      <Label layoutX="13.0" layoutY="239.0" text="Phone Number:" />
+      <TextField fx:id="phoneNumberTextField" layoutX="126.0" layoutY="234.0" minWidth="-Infinity" prefHeight="25.0" prefWidth="182.0" />
+      <Label layoutX="13.0" layoutY="279.0" text="Company Name:" />
+      <TextField fx:id="workTextField" layoutX="126.0" layoutY="279.0" prefHeight="25.0" prefWidth="182.0" />
+      <Label fx:id="outputLabel" layoutX="14.0" layoutY="326.0" prefHeight="17.0" prefWidth="330.0" />
+      <Button fx:id="deleteContactButton" layoutX="234.0" layoutY="357.0" mnemonicParsing="false" onAction="#DeleteDisplayedContact_Click" text="Delete Contact" />
+      <Button fx:id="saveButton" layoutX="19.0" layoutY="357.0" mnemonicParsing="false" onAction="#AddContactButton_Click" text="Add Contact" />
+   </children>
+</AnchorPane>
